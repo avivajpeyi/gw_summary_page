@@ -1,0 +1,15 @@
+black
+corner
+flake8
+flake8-bugbear
+isort
+
+ligo-gracedb
+
+matplotlib
+
+numpy
+pandas
+pre-commit
+pycodestyle
+scipy

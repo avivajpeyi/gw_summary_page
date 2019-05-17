@@ -1,1 +1,1 @@
-# gw_summary_page
+# python_project_template
