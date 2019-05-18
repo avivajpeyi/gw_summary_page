@@ -6,6 +6,7 @@ $(PYTHON)# Likelihood Estimator Makefile
 VENV_DIR=venv
 PYTHON=python3
 ACTIVATE_VENV=source $(VENV_DIR)/bin/activate
+SRC=src/
 
 # targets -------------------------------------------------------------------
 
@@ -45,3 +46,5 @@ test: setup
 	$(ACTIVATE_VENV)  && coverage report  --omit '*/venv/*,*test_*,*/lib/*' --fail-under=5 -m --skip-covered
 	$(ACTIVATE_VENV) && coverage html --omit '*/venv/*,*test_*'
 
+run: setup
+	$(ACTIVATE_VENV) && cd $(SRC) && $(PYTHON) extract_confirmed_gw.py
