@@ -13,7 +13,6 @@ The prefix is determined by the superevent’s “status” (is it marked as a �
 
 """
 
-
 from ligo.gracedb.rest import GraceDb
 
 GRACE_ID_KEY = "graceid"
